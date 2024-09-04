@@ -11,7 +11,7 @@ const App = () => {
   //     value.toString().toLowerCase().includes(searchTerm.toLowerCase())
   //   )
   // );
-  //The above code is optional or shortcut for these projects
+  //The above code is optional or shortcut for these projectsg
 
   const handleClick = () => {
     const filterItems = users.filter((user) =>
@@ -44,11 +44,11 @@ const App = () => {
         type="text"
         onChange={handleInputChange}
       />
-      <button onClick={handleClick}>Search</button>
+      <button onClick={handleClick}>検索</button>
 
       <ul>
         {filteredUsers.map((user) => (
-          <li key={user.id}>{`${user.firstName} - ${user.age}`}</li>
+          <li key={user.id}>{`${user.firstName} - ${user.age}歳`}</li>
         ))}
       </ul>
     </div>
